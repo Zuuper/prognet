@@ -1,0 +1,25 @@
+html,body{
+    height: 100%;
+}
+main{
+    padding: 3em 10em;
+}
+
+#isian-data{
+    margin-top: 2em;
+}
+.form-section{
+    margin-top: 0.75em;
+}
+
+.yellow-background{
+    background-color: yellow;
+    color: black;
+}
+#table{
+    max-width: 10em;
+}
+.isi-table{
+    text-align: center;
+}
+
