@@ -19,7 +19,7 @@
         <!-- form section -->
         <section id="form">
             <h3>Masukan jumlah table perkalian</h3>
-            <form action="tabel_perkalian.php" method="post" id="isian-data">
+            <form action="tabel-perkalian.php" method="post" id="isian-data">
                 <div class="form-section">
                     <label for="nilai">Jumlah nilai</label>
                     <input type="number" class="form-control col-5" id="nilai" name="fnilai" aria-describedby="nilai-baris" required>
