@@ -34,7 +34,6 @@
 
         <!-- table section -->
         <section id="table-perkalian">
-            <h6 class="form-section font-weight-light">agar table muncul dengan benar, harus dimasukan jumlah nilai pada form diatas, karena apablia nilai belum di inputkan, maka akan muncul error mengenai variabel pada tabel</h6>
             <?php 
             $nilai = $_POST['fnilai'];
             echo '<table id="table" class="table form-section ">';
