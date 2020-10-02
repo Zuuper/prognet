@@ -31,7 +31,8 @@
                 
             </form>
         </section>
-
+        <h4>kalau muncul error, harap diabaikan karena value pada $nilai harus di input terlebih dahulu</h4>
+        <h4>saya gak ngerti cara ngilangin errornya</h4>
         <!-- table section -->
         <section id="table-perkalian">
             <?php 
