@@ -22,83 +22,107 @@
 	        $result = mysqli_query($conn,$sql);
 	        while($data = mysqli_fetch_array($result)){
         ?>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <h4 class="text-left">NIK</h4>
-                </div>
-                <div class="col-9">
-                    <h4 class="text-left">: <?php echo $data['nik'] ?> </h4>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <h4 class="text-left">Nama</h4>
-                </div>
-                <div class="col-9">
-                    <h4 class="text-left">: <?php echo $data['nama'] ?> </h4>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <h4 class="text-left">NIM</h4>
-                </div>
-                <div class="col-9">
-                    <h4 class="text-left">: <?php echo $data['nim'] ?> </h4>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <h4 class="text-left">Tempat Lahir</h4>
-                </div>
-                <div class="col-9">
-                    <h4 class="text-left">: <?php echo $data['tempat_lahir'] ?> </h4>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <h4 class="text-left">Tanggal Lahir</h4>
-                </div>
-                <div class="col-9">
-                    <h4 class="text-left">: <?php echo $data['tanggal_lahir'] ?> </h4>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <h4 class="text-left">Jenis Kelamin</h4>
-                </div>
-                <div class="col-9">
-                    <h4 class="text-left">: <?php echo $data['jenis_kelamin'] ?> </h4>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2">
-                    <h4 class="text-left">Golongan Darah</h4>
-                </div>
-                <div class="col-9">
-                    <h4 class="text-left">: <?php echo $data['golongan_darah'] ?> </h4>
-                </div>
-            </div>
+        <div class="card" style="width: 50rem;">
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="text-left">NIK</h6>
+                            </div>
+                            <div class="col-9">
+                                <p class="text-left">: <?php echo $data['nik'] ?> </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="text-left">Nama</h6>
+                            </div>
+                            <div class="col-9">
+                                <p class="text-left">: <?php echo $data['nama'] ?> </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="text-left">NIM</h6>
+                            </div>
+                            <div class="col-9">
+                                <p class="text-left">: <?php echo $data['nim'] ?> </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="text-left">Tempat Lahir</h6>
+                            </div>
+                            <div class="col-9">
+                                <p class="text-left">: <?php echo $data['tempat_lahir'] ?> </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="text-left">Tanggal Lahir</h6>
+                            </div>
+                            <div class="col-9">
+                                <p class="text-left">: <?php echo $data['tanggal_lahir'] ?> </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="text-left">Jenis Kelamin</h6>
+                            </div>
+                            <div class="col-9">
+                                <p class="text-left">: <?php echo $data['jenis_kelamin'] ?> </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-2">
+                                <h6 class="text-left">Golongan Darah</h6>
+                            </div>
+                            <div class="col-9">
+                                <p class="text-left">: <?php echo $data['golongan_darah'] ?> </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="row">
+                        <div class="col-2">
+                            <h6 class="text-left">Hobi</h6>
+                        </div>
+                        <div class="col-9">
+                            <p class="text-left">: <?php echo $data['hobby'] ?> </p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="crud-mysql.php" class="btn btn-primary">kembali</a>
         </div>
     <?php } ?>
-    <div>
-        <a href="crud-mysql.php" class="col-2 d-flex align-items-end justify-content-end">
-            <button type="button" class="btn btn-primary text-uppercase" style="width : 5rem">Kembali</button>        
-        </a>
-    </div>
-    
     </main>
     
 </body>

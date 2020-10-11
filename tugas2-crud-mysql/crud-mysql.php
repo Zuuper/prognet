@@ -73,20 +73,22 @@
                         <td>
                             <a href="view-data.php?id=<?php echo $data['id']?>"><i class="fas fa-eye fa-lg"></i></a>
                             <a href="edit-data.php?id=<?php echo $data['id']?>"><i class="fas fa-pen fa-lg"></i></a>
-                            <a href="delete-data.php?id=<?php echo $data['id']?>"><i class="fas fa-trash-alt fa-lg   "></i></a>
+                            <a href="delete-data.php?id=<?php echo $data['id']?>" data-toggle="modal" data-target="#delete"><i class="fas fa-trash-alt fa-lg   "></i></a>
                         </td>
                     </tbody>
-                        <?php } ?>
+                    <?php } ?>
                 </table>
+                
             </div>
             <!-- opsi yang keliatan saat ukuran layar dibawah medium -->
             <div>
-
+                
             </div>
         </section>
     </main>
+        <!-- Button trigger modal -->
 
-    
+<!-- Modal -->    
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>

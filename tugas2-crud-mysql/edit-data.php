@@ -24,6 +24,7 @@
             $sql = "SELECT * FROM tugas2 WHERE id='$id'";
 	        $result = mysqli_query($conn,$sql);
 	        while($data = mysqli_fetch_array($result)){
+            $hobby = explode(',', $data['hobby']);
         ?>
         <form action="update-data.php" method="post" name="update-data">
             <input type="hidden" name="id" value="<?php echo $data['id']; ?>">
@@ -50,12 +51,35 @@
             <div class="form-group">
                 <h6>jenis kelamin sebelumnya : <?php echo $data['jenis_kelamin']; ?></h6>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" id="jenis_kelamin1" name="jenis_kelamin" value="laki-laki">
+                        <input class="form-check-input" type="radio" id="jenis_kelamin1" name="jenis_kelamin" value="laki-laki" <?php if ($data['jenis_kelamin'] == "laki-laki"){ echo "checked";}?>>
                         <label for="jenis_kelamin1">Laki - Laki</label>
                     </div>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" id="jenis_kelamin2" name="jenis_kelamin" value="perempuan">
+                        <input class="form-check-input" type="radio" id="jenis_kelamin2" name="jenis_kelamin" value="perempuan" <?php if ($data['jenis_kelamin'] == "perempuan"){ echo "checked";}?>>
                         <label for="jenis_kelamin2">perempuan</label>
+                    </div>
+            </div>
+            <div class="form-group">
+                <h6>Hobby</h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="hobi1" name="hobi[]" value="memancing keributan" <?php if (in_array("memancing keributan", $hobby)) echo "checked";?>>
+                        <label for="hobi1">Memancing keributan</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="hobi2" name="hobi[]" value="berfoya foya" <?php if (in_array("berfoya foya", $hobby)) echo "checked";?>>
+                        <label for="hobi2">berfoya - foya</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="hobi3" name="hobi[]" value="berdebat" <?php if (in_array("berdebat", $hobby)) echo "checked";?>>
+                        <label for="hobi3">berdebat</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="hobi4" name="hobi[]" value="belajar online" <?php if (in_array("belajar online", $hobby)) echo "checked";?>>
+                        <label for="hobi4">Belajar Online</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="hobi5" name="hobi[]" value="menari" <?php if (in_array("menari", $hobby)) echo "checked";?>>
+                        <label for="hobi5">Menari</label>
                     </div>
             </div>
             <div class="form-group">

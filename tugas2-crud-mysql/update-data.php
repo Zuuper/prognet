@@ -8,7 +8,8 @@ $tempat_lahir = $_POST['tempat_lahir'];
 $tanggal_lahir = $_POST['tanggal_lahir'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
 $golongan_darah = $_POST['golongan_darah'];
-$sql = "UPDATE tugas2 set nik='$nik', nama='$nama', nim='$nim', tempat_lahir='$tempat_lahir', tanggal_lahir='$tanggal_lahir', jenis_kelamin='$jenis_kelamin', golongan_darah='$golongan_darah' WHERE id='$id'";
+$hobby = implode(",", $_POST['hobi']);
+$sql = "UPDATE tugas2 set nik='$nik', nama='$nama', nim='$nim', tempat_lahir='$tempat_lahir', tanggal_lahir='$tanggal_lahir', jenis_kelamin='$jenis_kelamin', golongan_darah='$golongan_darah', hobby='$hobby' WHERE id='$id'";
 $insert = mysqli_query($conn,$sql);
 
 if ($insert === TRUE) {

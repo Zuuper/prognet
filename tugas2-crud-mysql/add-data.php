@@ -17,7 +17,7 @@
     </div>
     <!-- main page -->
     <main class="container">
-        <form action="input-data.php" method="post" name="tambah-data">
+        <form action="input-data.php" method="post" name="tambah-data" enctype=”multipart/form-data”>
             <div class="form-group">
                 <label for="nik" >NIK</label>
                 <input type="number" class="form-control" id="nik" name="nik">
@@ -84,7 +84,7 @@
             </div>
             <div class="form-group">
                 <label for="upload" >Upload Gambar</label>
-                <input type="file" class="form-control" id="upload" name="upload">
+                <input type="file" class="form-control" id="upload" name="image" />
             </div>
             <div class="d-flex justify-content-end mt-5">
                     <button type="submit" class="btn btn-primary">save</button>
